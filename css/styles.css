@@ -1,0 +1,362 @@
+:root{
+    /* Primary */
+    --pink: hsl(322, 100%, 66%);
+
+    /* Neutral */
+    --very-pale-cyan: hsl(193, 100%, 96%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    color: var(--grayish-blue);
+}
+
+.header{
+    padding: 1.5rem;
+    background-color: var(--very-pale-cyan);
+    background-image: url(../assets/images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    color: var(--very-dark-cyan);
+}
+
+.logo-container{
+    display: flex;
+    margin-bottom: 5rem;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 1.1rem;
+}
+
+.try-button{
+    padding: 0.5em 2em;
+    text-decoration: none;
+
+    font-size: .65rem;
+    font-weight: 700;
+
+    color: var(--very-dark-cyan);
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem .5rem hsl(0, 0%, 89%);
+}
+
+.try-button:hover{
+    color: var(--grayish-blue);
+}
+
+.try-button:focus-visible,
+.get-started-button:focus-visible{
+    outline: .2rem solid var(--very-dark-cyan);
+}
+
+.mission-container{
+    text-align: center;
+    padding: 0 1.4rem;
+}
+
+.mission{
+    margin-bottom: 3.5rem;
+}
+
+.mission-title{
+    margin-bottom: 1.2rem;
+    line-height: 2.2rem;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.mission-text{
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+
+    font-size: 1rem;
+}
+
+.pink{
+    color: white;
+    background-color: var(--pink);
+}
+
+.get-started-button{
+    display: inline-block;
+    text-decoration: none;
+
+    font-weight: 700;
+
+    background-color: var(--pink);
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.get-started-button:hover{
+    opacity: .7;
+}
+
+.size-1{
+    padding: 1em 4.5em;
+    font-size: .75rem;
+}
+
+.size-2{
+    padding: 1.3em 4.2em;
+    font-size: .65rem;
+}
+
+.main{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.feature-card{
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    padding: 3rem 2.2rem;
+    margin-bottom: 2.2rem;
+    text-align: center;
+
+    border-radius: 1rem;
+    box-shadow: 0 0 10px hsl(0, 0%, 89%);
+}
+
+.card-get-started{
+    position: relative;
+    top: 6rem;
+    width: 95%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem .5rem;
+    text-align: center;
+
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 1.8rem -1.5rem 1rem -1.7rem hsl(0, 0%, 89%),
+    -1.8rem -1.5rem 1rem -1.7rem hsl(0, 0%, 89%);
+}
+
+.feature-image{
+    margin-bottom: 3rem;
+}
+
+.illustration{
+    max-width: 100%;
+}
+
+.feature-title{
+    font-family: 'Poppins', sans-serif;
+    color: var(--very-dark-cyan);
+}
+
+.feature-text{
+    font-size: .92rem;
+    line-height: 1.3rem;
+}
+
+.footer{
+    padding-top: 7rem;
+    padding-right: 1.2rem;
+    padding-bottom: 3rem;
+    padding-left: 1.2rem;
+
+    background-color: var(--very-dark-cyan);
+    color: white;
+}
+
+.footer-logo{
+    height: 1.5rem;
+    margin-bottom: 2rem;
+    filter: invert(100%) saturate(0%) brightness(200%);
+}
+
+.data{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1.5rem;
+
+    font-size: .9rem;
+}
+
+.data-info{
+    margin-bottom: 3.5rem;
+}
+
+.links-section{
+    margin-bottom: 3.5rem;
+}
+
+.data-icon{
+    height: 1rem;
+    margin-right: 1rem;
+}
+
+.location{
+    position: relative;
+    bottom: .4rem;
+    margin: 0;
+    
+    line-height: 1.4rem;
+}
+
+.link,
+.data-content{
+    opacity: .7;
+}
+
+.link{
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link:focus-visible{
+    outline: .2rem solid white;
+}
+
+.social-network{
+    text-align: center;
+}
+
+.social-links{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.social-icon{
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    border: .1em solid white;
+    color: white;
+    line-height: 1.9em;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+}
+
+.social-icon:hover{
+    color: var(--pink);
+    border-color: var(--pink);
+}
+
+.social-icon:focus-visible{
+    outline: .2rem solid var(--pink);
+}
+
+.copyright{
+    font-size: .75rem;
+}
+
+@media (min-width:900px){
+
+    .header{
+        background-image: url(../assets/images/bg-hero-desktop.svg);
+    }
+    .header-content,
+    .main,
+    .footer-content{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header{
+        padding: 2.5rem 3.5rem;
+        
+    }
+
+    .logo-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo{
+        height: 1.5rem;
+    }
+    .try-button{
+        padding: 1em 4em;
+        font-size: .75rem;
+    }
+
+    .mission-container{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        text-align: left;
+    }
+
+    .mission{
+        width: 47%;
+        margin-bottom: 0;
+        padding-right: 3rem;
+        align-self: center;
+        
+    }
+
+    .mission-title{
+        line-height: 3rem;
+        font-size: 2.2rem;
+    }
+    
+    .mockup{
+        width: 53%;
+    }
+
+    .size-1{
+        padding: 1.3em 4.5em;
+    }
+
+    .feature-card{
+        display: flex;
+        text-align: left;
+    }
+    .feature-card:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+
+    .feature-container{
+        align-self: center;
+        padding: 0 5rem;
+    }
+
+    .feature-image{
+        text-align: center;
+        margin: 0;
+    }
+
+    .footer-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        column-gap: 6rem;
+    }
+
+    .links-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .social-network{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        text-align: left;
+    }
+}
